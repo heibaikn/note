@@ -6,6 +6,12 @@
 
 ## 清空浮动
 BFC(块级格式化上下文)
+形成BFC模式的盒子就会按自己的渲染规则布局和定位而不影响其他环境中的布局（常见的浮动元素脱离标准文档流，其内部子元素则按照其相应的渲染规则布局，而浮动元素之间则互不影响，其自身就像一个独立的容器）
+float的值不为none
+overflow值不为visible
+position值不为static / relative
+display的值为table-cell，table-caption， inline-block中的任何一个
+
 ```css
 .clearfix:after {
         content: '';
@@ -62,4 +68,10 @@ align-content
 > 媒体查询 @media 响应式布局 	
 手机 < 768px < ipad < 992px < pc屏幕 <1200px < 大屏
 
+## position
+
+raletive
+absolute
+fixed
+sticky
 
